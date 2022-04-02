@@ -1,0 +1,113 @@
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url("background_bottling.jpg");
+	background-color: black;
+	background-size: cover;
+	color: white;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}	
+
+#otsikko-alue {
+	background-color: goldenrod;
+	border-style: solid;
+	border-width: thick;
+	padding: 1%;
+	border-radius: 15px;
+	border-color: darkgoldenrod;
+}
+
+#logo {
+	font-weight: bolder;
+	color: black;
+	text-align: center;
+}	
+
+#slogan {
+	color: lawngreen;
+	text-align: center;
+}
+
+#brand {
+	border-style: solid;
+	border-color: burlywood;
+	border-radius: 5px;
+	width: 150px;
+}
+
+.navbar {
+	border-radius: 5px;
+}
+
+#navi-palkki a {
+	color: rgb(221, 164, 20);
+	text-decoration: none;
+}
+
+#navi-palkki a:hover {
+	text-decoration: none;
+	color: lightgoldenrodyellow;
+}
+
+aside{
+	background-color: rgba(210,105,30,0.5);
+	border-style: solid;
+	border-width: thick;
+	padding: 2%;
+	border-radius: 15px;
+	border-color: darkgoldenrod;
+	min-height: 100%;
+}
+
+article{
+	border-style: solid;
+	border-width: thick;
+	padding: 1%;
+	background-color: rgba(218,165,32,0.7);
+	border-radius: 15px;
+	border-color: darkgoldenrod;
+	max-width: 100%;
+	min-height: 650px;
+}
+
+aside ul {
+	list-style-type: none;
+	padding: 0;
+  }
+
+aside a:link {
+	text-decoration: none;
+	color: lawngreen;
+}
+
+aside a:visited {
+	text-decoration: none;
+	color: lightgoldenrodyellow;
+}
+
+aside a:hover {
+	text-decoration: none;
+	color: gold;
+}
+
+.pic {
+	border-radius: 15px;
+}
+
+.card {
+	background-color: goldenrod;
+}
+
+footer{
+	border-style: solid;
+	border-color: darkgoldenrod;
+	border-radius: 15px;
+	padding: 1%;
+	text-align: center;
+}
+
+aside ol {
+  list-style-type: upper-alpha;
+}
