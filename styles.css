@@ -75,6 +75,7 @@ article{
 	border-color: darkgoldenrod;
 	max-width: 100%;
 	min-height: 650px;
+	overflow-wrap: break-word;
 }
 
 aside ul {
