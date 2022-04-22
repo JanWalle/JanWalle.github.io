@@ -64,6 +64,7 @@ aside{
 	border-radius: 15px;
 	border-color: darkgoldenrod;
 	min-height: 100%;
+	overflow-wrap: break-word;
 }
 
 article{
