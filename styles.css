@@ -74,8 +74,8 @@ article{
 	background-color: rgba(218,165,32,0.7);
 	border-radius: 15px;
 	border-color: darkgoldenrod;
-	max-width: 100%;
 	min-height: 650px;
+	max-width: 100%;
 	overflow-wrap: break-word;
 }
 
@@ -117,6 +117,10 @@ aside a:hover {
 .card-img-top {
 	max-height: 200px;
 	object-fit: cover;
+}
+
+.figure-caption {
+	color: white;
 }
 
 footer{
