@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Third page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header id="otsikko-alue">
+<header id="otsikko-alue">
 		<div class="container-fluid">
       <div class="row">
 				<div class="col">
@@ -18,17 +20,34 @@
 				</div>
       </div>
 		</div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div>
-                <form class="container-fluid justify-content-start">
-                        <button class="btn btn-outline-success me-2" type="button"><a href="index.html">INDEX</a></button>
-                        <button class="btn btn-sm btn-outline-secondary" type="button"><a href="second.html">SECOND</a></button>
-                        <button class="btn btn-sm btn-outline-secondary" type="button"><a href="third.html">THIRD</a></button>
-                        <button class="btn btn-sm btn-outline-secondary" type="button"><a href="fourth.html">FOURTH</a></button>
-                </form>
-            </div>
-        </nav>
-	</header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <button class="btn btn-outline-success me-2" type="button"><a href="index.html">HOME</a></button>
+            </li>
+            <li class="nav-item m-1">
+              <button class="btn btn-sm btn-outline-secondary" type="button"><a href="second.html">BASICS</a></button>
+            </li>
+            <li class="nav-item m-1">
+              <button class="btn btn-sm btn-outline-secondary" type="button"><a href="third.html">PROCESS</a></button>
+            </li>
+            <li class="nav-item m-1">
+              <button class="btn btn-sm btn-outline-secondary" type="button"><a href="fourth.html">CONTACT</a></button>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">SEARCH</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+</header>
  
     <article>
         <div class="container-fluid">
@@ -50,7 +69,7 @@
                     <img src="heating_water.jpg" class="card-img-top" alt="heating water in the boilers">
                     <div class="card-body">
                       <h5 class="card-title">#2 Veden esilämmitys</h5>
-                      <p class="card-text">Veden lämmitys on syytä aloittaa hyvissä ajoin ennen mäskäystä. Sillä aikaa voi esimerkiksi punnita ja jauhaa käytettävät maltaat.</p>
+                      <p class="card-text">Veden lämmitys on syytä aloittaa hyvissä ajoin ennen mäskäystä. Sillä välin voi esimerkiksi punnita ja jauhaa käytettävät maltaat.</p>
                     </div>
                   </div>
                 </div>
@@ -74,7 +93,7 @@
                 </div>
                 <div class="col">
                     <div class="card">
-                      <img src="lifting_mashbed.jpg" class="card-img-top" alt="mashbed is being lifted from the boiler">
+                      <img src="lifting_mashbed2.jpg" class="card-img-top" alt="mashbed is being lifted from the boiler">
                       <div class="card-body">
                         <h5 class="card-title">#4 Huuhtelu</h5>
                         <p class="card-text">Kun maltaita on liotettu riittävä aika, aletaan mäskipetiä nostamaan vaiheittain pannusta ja samalla sitä huuhdellaan kuumalla vedellä, jotta kaikki sokerit saadaan talteen.</p>
@@ -92,7 +111,7 @@
                   </div>
                   <div class="col">
                     <div class="card">
-                      <img src="cooking.jpg" class="card-img-top" alt="cooking wart with some hops">
+                      <img src="cooking.jpg" class="card-img-top" alt="cooking wort with some hops">
                       <div class="card-body">
                         <h5 class="card-title">#5 Keitto</h5>
                         <p class="card-text">Mäskäyksen jälkeen vierrettä aletaan keittää. Tasaisen kiehumisen varmistamiseksi on pannuissa käytettävä eristevaippaa. Huomaa kuvassa näkyvä keittohumaloinnissa käytettävä kori.</p>
@@ -101,7 +120,7 @@
                   </div>
                   <div class="col">
                     <div class="card">
-                      <img src="cooling_wart.jpg" class="card-img-top" alt="wart is being cooled with heat exchanger">
+                      <img src="cooling_wart.jpg" class="card-img-top" alt="wort is being cooled with heat exchanger">
                       <div class="card-body">
                         <h5 class="card-title">#6 Jäähdytys</h5>
                         <p class="card-text">Keittämisen jälkeen vierre on saatava jäähtymään mahdollisimman nopeasti. Vesikiertoon perustuva lämmönvaihdin on tähän erinomainen työkalu.</p>
@@ -110,16 +129,25 @@
                   </div>
                   <div class="col">
                     <div class="card">
-                      <img src="fermenting.jpg" class="card-img-top" alt="fermenting vessel with waterlock">
+                      <img src="og.jpg" class="card-img-top" alt="hydrometer floating in the sample tube">
                       <div class="card-body">
-                        <h5 class="card-title">#7 Käyminen</h5>
-                        <p class="card-text">Ale-tyyppiset oluet vaativat noin kahden viikon käymisajan ennen pullotusta. Käytämme Vaisalan anturitekniikkaa lämpötilamonitorointiin.</p>
+                        <h5 class="card-title">Alkoholipitoisuus?</h5>
+                        <p class="card-text">Oluen tuleva alkoholiprosentti saadaan selville laskutoimituksella mittaamalla ensin vierteen ominaismassa (engl. original gravity). Alkoholin osuus tarkistetaan usein vielä käymisen jälkeen.</p>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card">
-                      <img src="siphon.jpg" class="card-img-top" alt="siphoning fermented wart">
+                      <img src="fermenting.jpg" class="card-img-top" alt="fermenting vessel with waterlock">
+                      <div class="card-body">
+                        <h5 class="card-title">#7 Käyminen</h5>
+                        <p class="card-text">Jäähdyttämisen jälkeen vierteeseen lisätään hiiva. Ale-tyyppiset oluet vaativat noin kahden viikon käymisajan ennen pullotusta. Lämpötilamonitorointiin hyödynnämme Vaisalan anturitekniikkaa.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="siphon.jpg" class="card-img-top" alt="siphoning fermented wort">
                       <div class="card-body">
                         <h5 class="card-title">#8 Lappoaminen</h5>
                         <p class="card-text">Pullostusta edeltävällä lappoamisella voidaan vähentää kiintoaineksen eli ts. sakan osuutta oluessa. Huomaa vierteessä kelluva kuivahumalointiin käytetty sihti.</p>
@@ -131,13 +159,13 @@
                       <img src="bottle_sugar.jpg" class="card-img-top" alt="weighting bottling sugar">
                       <div class="card-body">
                         <h5 class="card-title">Pullotussokeri</h5>
-                        <p class="card-text">Oluen hiilidioksidi aikaansaadaan harrastajatasolla pullosokeroimalla eli jälkikäymisellä. Pieni määrä veteen liotettua pullotussokeria lisätään olueen ennen pullotusta.</p>
+                        <p class="card-text">Oluen hiilidioksidi on harrastajatasolla helpointa aikaansaada pullosokeroimalla eli jälkikäymisellä. Pieni määrä veteen liotettua pullotussokeria lisätään olueen ennen pullotusta.</p>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card">
-                      <img src="bottling.jpg" class="card-img-top" alt="wart is being bottled from the nozzle">
+                      <img src="bottling.jpg" class="card-img-top" alt="wort is being bottled from the nozzle">
                       <div class="card-body">
                         <h5 class="card-title">#9 Pullotus</h5>
                         <p class="card-text">Pullotus tapahtuu käymisastiaan liitettävien pullotusnokkien avulla. Tätä ennen pullot on pesty ja höyrytetty huolella.</p>
@@ -167,7 +195,16 @@
                           <img src="labeled.jpg" class="card-img-top" alt="rows of capped bottles with top labels">
                           <div class="card-body">
                             <h5 class="card-title">#11 Merkintä</h5>
-                            <p class="card-text">Jälkikäyminen kestää toiset kaksi viikkoa. Aromit kehittyvät muutamia viikkoja vielä senkin jälkeen, joten juomisen kanssa ei kannata kiirehtiä;) Kuvan kaltainen minimalistinen merkintätapa vähentää pullojen pesussa syntyvän roskan määrää.</p>
+                            <p class="card-text">Jälkikäyminen kestää toiset kaksi viikkoa. Aromit kehittyvät muutamia viikkoja vielä senkin jälkeen, joten juomisen kanssa ei kannata kiirehtiä ; ) Kuvan kaltainen minimalistinen merkintätapa vähentää pullojen pesussa syntyvän roskan määrää.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="card">
+                          <img src="valmis.jpg" class="card-img-top" alt="a glass of beer with six empty bottles">
+                          <div class="card-body">
+                            <h5 class="card-title">Valmis tuote!</h5>
+                            <p class="card-text">Lopputuotteen huolellinen analysointi mahdollisten virhemakujen varalta on tärkeää.</p>
                           </div>
                         </div>
                       </div>
@@ -180,9 +217,6 @@
             <p>Made by Jan Wallenius for course "Verkkosivujen kehittäminen R0244-3022" at Laurea University of Applied Sciences.</p>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -5,6 +5,8 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	background-image: url("background_bottling.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-color: black;
 	background-size: cover;
 	color: white;
@@ -42,11 +44,15 @@ body {
 	width: 150px;
 }
 
+#lopputuote {
+	max-width: 50%;
+}
+
 .navbar {
 	border-radius: 5px;
 }
 
-nav a {
+nav a{
 	color: rgb(221, 164, 20);
 	text-decoration: none;
 }
@@ -97,7 +103,7 @@ aside a:visited {
 
 aside a:hover {
 	text-decoration: none;
-	color: gold;
+	color: yellow;
 }
 
 .pic {
